@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Management System - Dự Án Quản Lý Cà Phê</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- React & ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <!-- Babel Compiler -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coffee: {
+              50: '#fdfbf7',
+              100: '#f7f2e8',
+              200: '#eee2cd',
+              300: '#e1caaa',
+              400: '#ceaa79',
+              500: '#ba894e',
+              600: '#a36d3f',
+              700: '#835234',
+              800: '#6d422f',
+              900: '#593829',
+              950: '#321d15',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="bg-[#120c0a] text-amber-50 font-sans antialiased min-h-screen selection:bg-coffee-500 selection:text-white">
+  <div id="root"></div>
+
+  <script src="./src/supabase-config.js"></script>
+  <script src="./src/supabase-client.js"></script>
+  <script type="text/babel" src="./src/app.js"></script>
+</body>
+</html>
